@@ -105,7 +105,7 @@ button {
   
   width: 100px;
   height: 40px;
-  margin-top: 15px;
+  margin-top: 25px;
   background-color:#60a5fa;
   color: white;
   border-radius: 2px;
@@ -203,8 +203,9 @@ button {
 
 main {
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
+    background-color: lightgray;
 }
 
 .articles {
@@ -215,14 +216,51 @@ main {
     
 }
 
-.articles div {
 
-}
 
 .announcements {
-    background-color: burlywood;
+    
     grid-column: 2 / -1;
     grid-row: 1 / 2;
+}
+
+.announcements h3 {
+  margin-left: 25px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.announcement-box {
+  border-radius: 15px;
+  background-color: white;
+  
+  margin: 0px 25px 25px 25px;
+}
+
+.announcement-grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.announcement-item {
+  margin-left: 25px;
+  margin-right: 25px;
+  border-bottom: 1px solid gray;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.announcement-item:last-of-type {
+  border: none;
+}
+
+.announcement-grid p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 
@@ -231,12 +269,6 @@ main {
     grid-column: 2 / -1;
     grid-row: 2 / -1;
 }
-
-
-
-
-
-
 
 
 /*
